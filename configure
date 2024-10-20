@@ -313,7 +313,7 @@ Using defaults from config.cache. To ignore, either rm config.cache
 or give the command-line option "-ignore-cache".
 
 EOT
-	. config.cache
+	. $PATH/config.cache
 	if [ ! "$HAVE_SNPRINTF" \
 			-o ! "$BAD_SNPRINTF" \
 			-o ! "$HAVE_STRICMP" \
