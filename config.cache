@@ -1,16 +1,16 @@
 PROGRAM="services"
-BINDEST="/home/smith/services"
-DATDEST="/home/smith/services"
+BINDEST="/home/k9/services"
+DATDEST="/home/k9/services"
 
 INSTALL="install -m 700"
 CP_ALL="/bin/cp -pr"
 
 RUNGROUP=""
 UMASK=077
-IRCTYPE=2
-IRCTYPE_DEF="IRC_BAHAMUT"
+IRCTYPE=3
+IRCTYPE_DEF="IRC_UNREAL"
 IRCTYPE_DEF2=""
-ENCRYPTION="ENCRYPT_MD5"
+ENCRYPTION=""
 IMPORTSUPPORT=""
 THREAD=""
 MYSQL="USE_MYSQL"
@@ -22,7 +22,7 @@ OSTYPE="bonkle"
 CC="gcc"
 CC_FLAGS="-O2 -I/usr/include"
 CC_LFLAGS=""
-CC_LIBS="-L/usr/local/lib/mysql -lmysqlclient -lz"
+CC_LIBS="-L/usr/lib64 -lmysqlclient -lz"
 
 TYPE_INT16=short
 TYPE_INT32=int
