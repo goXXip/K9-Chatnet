@@ -204,7 +204,7 @@ static void services_restart(void)
     disconn(servsock);
     close_log();
 #if defined(LINUX20) || defined(LINUX22)
-    pthread_kill_other_threads_np();
+   void pthread_kill_other_threads_np(void);
 #endif
     execve(SERVICES_BIN, my_av, my_envp);
     if (!readonly) {
@@ -501,7 +501,7 @@ int main(int ac, char **av, char **envp)
         disconn(servsock);
         close_log();
 #if defined(LINUX20) || defined(LINUX22)
-        pthread_kill_other_threads_np();
+      void  pthread_kill_other_threads_np(void);
 #endif
         execve(SERVICES_BIN, av, envp);
         if (!readonly) {
