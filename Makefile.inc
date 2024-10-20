@@ -4,7 +4,7 @@
 CC=gcc
 BASE_CFLAGS=-O2 -I/usr/include
 LFLAGS=
-LIBS=-L/usr/local/lib/mysql -lmysqlclient -lz
+LIBS=-L/usr/lib64 -lmysqlclient -lz
 ELIBS=
 MLIBS=
 
