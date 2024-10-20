@@ -421,7 +421,7 @@ addCoreCommand(CHANSERV,c);
     c = createCommand("ACT",                            do_act,          NULL,  BOT_HELP_ACT, -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
     c = createCommand("NOEXPIRE",   do_set_noexpire,  NULL, VERSION_NO_HELP, -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
 #ifdef HAS_HALFOP
-    c = createCommand("HOP",      do_hop,      NULL,  CHAN_HELP_HOP,            -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
+    c = createCommand("HOP",      do_halfop,      NULL,  CHAN_HELP_HOP,            -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
 #endif
     c = createCommand("ADDUSER",  do_adduser,  NULL,  CHAN_HELP_ADDUSER, -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
 //    c = createCommand("AUTOLIMIT",     do_fixme,     NULL, CHAN_HELP_CHANLIMIT, -1,-1,-1,-1); addCoreCommand(CHANSERV,c);
