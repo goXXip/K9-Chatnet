@@ -4,7 +4,7 @@
 #
 
 # Grab version information from the version control file.
-CTRL="version.log"
+CTRL="/proc/self/cwd/version.log"
 if [ -f $CTRL ] ; then
 	. $CTRL
 else
