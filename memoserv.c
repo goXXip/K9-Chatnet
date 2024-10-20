@@ -18,7 +18,7 @@
 /*************************************************************************/
 /* *INDENT-OFF* */
 
-NickCore *nclists[1024];
+//NickCore *nclists[1024];
 static int delmemo(MemoInfo *mi, int num);
 static int do_help(User *u);
 static int do_send(User *u);
