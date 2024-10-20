@@ -6,7 +6,7 @@ include ../Makefile.inc
 LANGOBJS = cat de en_us es fr gr nl pt tr it ru
 LANGSRCS = cat de en_us.l es fr.l gr.l nl.l pt.l tr.l it.l ru.l
 
-LANGCOMP = ./langcomp
+LANGCOMP = /proc/self/cwd/lang/./langcomp
 #LANGCOMP = ./langcomp -w
 
 
