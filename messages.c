@@ -17,7 +17,7 @@
 #include "language.h"
 
 static char *uplink;
-int servernum;
+//int servernum;
 /* List of messages is at the bottom of the file. */
 
 /*************************************************************************/
