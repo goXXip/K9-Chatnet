@@ -82,7 +82,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_NickServ, desc_NickServ, "+S");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_NickServ, desc_NickServ, "+oS");
+        NICK(s_NickServ, desc_NickServ, "+oqdS");
 #else
         NICK(s_NickServ, desc_NickServ, "+o");
 #endif
@@ -90,7 +90,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_ChanServ, desc_ChanServ, "+S");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_ChanServ, desc_ChanServ, "+oS");
+        NICK(s_ChanServ, desc_ChanServ, "+oqdS");
 #else
         NICK(s_ChanServ, desc_ChanServ, "+o");
 #endif
@@ -98,7 +98,7 @@ void introduce_user(const char *user)
 #ifdef HAS_VHOST
     if (s_HostServ && (!user || stricmp(user, s_HostServ) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_HostServ, desc_HostServ, "+oS");
+        NICK(s_HostServ, desc_HostServ, "+oqdS");
 #else
         NICK(s_HostServ, desc_HostServ, "+o");
 #endif
@@ -108,7 +108,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_MemoServ, desc_MemoServ, "+S");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_MemoServ, desc_MemoServ, "+oS");
+        NICK(s_MemoServ, desc_MemoServ, "+oqdS");
 #else
         NICK(s_MemoServ, desc_MemoServ, "+o");
 #endif
@@ -116,7 +116,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_BotServ, desc_BotServ, "+S");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_BotServ, desc_BotServ, "+oS");
+        NICK(s_BotServ, desc_BotServ, "+oqdS");
 #else
         NICK(s_BotServ, desc_BotServ, "+o");
 #endif
@@ -124,7 +124,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_HelpServ, desc_HelpServ, "+Sh");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_HelpServ, desc_HelpServ, "+oS");
+        NICK(s_HelpServ, desc_HelpServ, "+oqdS");
 #else
         NICK(s_HelpServ, desc_HelpServ, "+h");
 #endif
@@ -132,7 +132,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_OperServ, desc_OperServ, "+iS");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_OperServ, desc_OperServ, "+ioS");
+        NICK(s_OperServ, desc_OperServ, "+ioqdS");
 #else
         NICK(s_OperServ, desc_OperServ, "+io");
 #endif
@@ -146,7 +146,7 @@ void introduce_user(const char *user)
 #if defined(IRC_ULTIMATE) || defined(IRC_ULTIMATE3)
         NICK(s_GlobalNoticer, desc_GlobalNoticer, "+iS");
 #elif defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_GlobalNoticer, desc_GlobalNoticer, "+ioS");
+        NICK(s_GlobalNoticer, desc_GlobalNoticer, "+ioqdS");
 #else
         NICK(s_GlobalNoticer, desc_GlobalNoticer, "+io");
 #endif
@@ -154,56 +154,56 @@ void introduce_user(const char *user)
 /* We make aliases go online */
     if (s_NickServAlias && (!user || stricmp(user, s_NickServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_NickServAlias, desc_NickServAlias, "+oS");
+        NICK(s_NickServAlias, desc_NickServAlias, "+oqdS");
 #else
         NICK(s_NickServAlias, desc_NickServAlias, "+o");
 #endif
     if (s_ChanServAlias && (!user || stricmp(user, s_ChanServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_ChanServAlias, desc_ChanServAlias, "+oS");
+        NICK(s_ChanServAlias, desc_ChanServAlias, "+oqdS");
 #else
         NICK(s_ChanServAlias, desc_ChanServAlias, "+o");
 #endif
     if (s_MemoServAlias && (!user || stricmp(user, s_MemoServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_MemoServAlias, desc_MemoServAlias, "+oS");
+        NICK(s_MemoServAlias, desc_MemoServAlias, "+oqdS");
 #else
         NICK(s_MemoServAlias, desc_MemoServAlias, "+o");
 #endif
     if (s_BotServAlias && (!user || stricmp(user, s_BotServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_BotServAlias, desc_BotServAlias, "+oS");
+        NICK(s_BotServAlias, desc_BotServAlias, "+oqdS");
 #else
         NICK(s_BotServAlias, desc_BotServAlias, "+o");
 #endif
     if (s_HelpServAlias && (!user || stricmp(user, s_HelpServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_HelpServAlias, desc_HelpServAlias, "+oS");
+        NICK(s_HelpServAlias, desc_HelpServAlias, "+oqdS");
 #else
         NICK(s_HelpServAlias, desc_HelpServAlias, "+h");
 #endif
     if (s_OperServAlias && (!user || stricmp(user, s_OperServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_OperServAlias, desc_OperServAlias, "+ioS");
+        NICK(s_OperServAlias, desc_OperServAlias, "+ioqdS");
 #else
         NICK(s_OperServAlias, desc_OperServAlias, "+io");
 #endif
     if (s_DevNullAlias && (!user || stricmp(user, s_DevNullAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_DevNullAlias, desc_DevNullAlias, "+iS");
+        NICK(s_DevNullAlias, desc_DevNullAlias, "+iqdS");
 #else
         NICK(s_DevNullAlias, desc_DevNullAlias, "+i");
 #endif
     if (s_HostServAlias && (!user || stricmp(user, s_HostServAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-        NICK(s_HostServAlias, desc_HostServAlias, "+ioS");
+        NICK(s_HostServAlias, desc_HostServAlias, "+ioqdS");
 #else
         NICK(s_HostServAlias, desc_HostServAlias, "+io");
 #endif
     if (s_GlobalNoticerAlias
         && (!user || stricmp(user, s_GlobalNoticerAlias) == 0))
 #if defined(IRC_ULTIMATE) || defined(IRC_UNREAL)
-        NICK(s_GlobalNoticerAlias, desc_GlobalNoticerAlias, "+ioS");
+        NICK(s_GlobalNoticerAlias, desc_GlobalNoticerAlias, "+ioqdS");
 #else
         NICK(s_GlobalNoticerAlias, desc_GlobalNoticerAlias, "+io");
 #endif
@@ -217,7 +217,7 @@ void introduce_user(const char *user)
             for (bi = botlists[i]; bi; bi = bi->next)
                 if (!user || !stricmp(user, bi->nick))
 #if defined(IRC_UNREAL) || defined(IRC_VIAGRA)
-                    NEWNICK(bi->nick, bi->user, bi->host, bi->real, "+qS",
+                    NEWNICK(bi->nick, bi->user, bi->host, bi->real, "+qdoS",
                             1);
 #elif defined(IRC_ULTIMATE)
                     NEWNICK(bi->nick, bi->user, bi->host, bi->real, "+pS",
@@ -712,7 +712,7 @@ int init(int ac, char **av)
     }
 
 #ifdef IRC_UNREAL
-    send_cmd(NULL, "PROTOCTL NICKv2 VHP");
+    send_cmd(NULL, "PROTOCTL NICKv2 SJOIN VHP");
 #endif
 #if defined(IRC_ULTIMATE3)
     if (servernum == 1)
