@@ -16,8 +16,8 @@ MYSQL_C=mysql.c
 MYSQL_O=mysql.o
 
 PROGRAM=services
-BINDEST=/home/smith/services
-DATDEST=/home/smith/services
+BINDEST=/home/k9/services
+DATDEST=/home/k9/services
 
 INSTALL=install -m 700
 CP_ALL=/bin/cp -pr
