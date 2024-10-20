@@ -1,0 +1,26 @@
+
+ChatNet IRC Services
+
+
+Includes K9, and DogTag services.
+ 
+For a listing of available K9 commands, type: /msg K9 COMMANDS
+For a listing of available DogTag commands, type: /msg DogTag COMMANDS
+ 
+
+Further information and help on services commands are available in #DogHouse
+ 
+Report bugs using http://ticket.chatnet.org or via E-Mail at bugs@chatnet.org thank you!
+ 
+Coding Team: Smith, Drizzt.
+Contact us at: coders@list.chatnet.org
+
+Thanks goes to Pedro for their past work.
+
+Special Thanks to:
+
+#Doghouse, Vickil, Avaon, ^Shadow^. *
+
+#FreeBSD, verbal, dima. *
+
+And all the opers who helped testing.

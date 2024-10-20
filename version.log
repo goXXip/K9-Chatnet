@@ -1,0 +1,58 @@
+# (C) 2003 Anope 
+# Contact us at info@anope.org
+#
+# Please read COPYING and README for furhter details.
+#
+# $Id: version.log 62 2004-04-19 02:35:29Z dane $
+
+VERSION_MAJOR="1"
+VERSION_MINOR="2"
+VERSION_PATCH="0"
+VERSION_BUILD="20"
+VERSION_EXTRA=""
+
+# $Log$
+#
+# BUILD : 1.6.2 (62)
+# NOTES : Anope 1.6.2 Release
+#
+# BUILD : 1.6.1 (61)
+# NOTES : Anope 1.6.2 Release
+#
+# BUILD : 1.6.1 (60)
+# BUGS  : 10 11
+# NOTES : Merged trunk changes r42:56 for mysql.c and r42:59 for mydbgen.
+#
+# BUILD : 1.6.1 (52)
+# NOTES : SVN Framework.
+#
+# BUILD : 1.6.1 (43)
+# NOTES : Anope 1.6.1 Release
+#
+# BUILD : 1.6.0 (41)
+# BUGS  : 10 11
+# NOTES : Merged trunk changes r39:40 into stable-1.6
+#
+# BUILD : 1.6.0 (31)
+# BUGS  : 3
+# NOTES : Fixed moduleAddCommand for a non-existant service
+#
+# BUILD : 1.6.0 (30)
+# BUGS  : http://bugs.anope.org/show_bug.cgi?id=3
+# NOTES : Fixed moduleAddCommand for a non-existant service, now returns MOD_ERR_NOSERVICE, updated hs_moo to deal with it nicely
+#
+# BUILD : 1.6.0 (22)
+# BUGS  : N/A
+# NOTES : it was decided that the inability to add module commands and messages from outside AnopeInit was indeed a bug, as such, the fix has been back-ported to the stable branch
+# 
+#
+# BUILD : 1.6.0 (6)
+# BUGS  : none
+# NOTES : Removed estra table definition from tables.sql. Minor fixes.
+#
+# BUILD : 1.6.0 (4)
+# BUGS  : none
+# NOTES : File cleanup and new AnopeManager script (bin/am) to work
+#         with Anope source control. Version schema change with no
+#         impact on cpp directives.
+# EOF
