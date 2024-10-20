@@ -46,10 +46,10 @@
 # For languages other than English, this string should have the following
 # format:
 #     language-name-in-language (language-name-in-English)
-# For example, "Español (Spanish)" or "Français (French)".
+# For example, "EspaÃ±ol (Spanish)" or "FranÃ§ais (French)".
 
 LANG_NAME
-	Français (French)
+	FranÃ§ais (French)
 
 #######pedro######
 COMMAND_LEVEL_0
@@ -507,7 +507,7 @@ NICK_SET_LANGUAGE_SYNTAX
 NICK_SET_LANGUAGE_UNKNOWN
 	Unknown language number %d.  Type /msg %s HELP SET LANGUAGE for a list of languages.
 NICK_SET_LANGUAGE_CHANGED
-	Votre langue est maintenant le Français.
+	Votre langue est maintenant le FranÃ§ais.
 
 # SET URL responses
 NICK_SET_URL_CHANGED
@@ -3787,12 +3787,12 @@ CHAN_HELP_VERSION
 	ChatNet K9 Channel Services
 	
 	ChatNet modifications (c) 2005-2006
-	
+	Basgelsin modifications (c) 2024
 	E-mail: routing@lists.chatnet.org
 	Authors:
 	
-	Smith (smith@smit-h.net)
-	Pedro (pedro@casumatrix.it)
+	goXXip (admin@basgelsin.net)
+	tonytr (admin@dvbsat.org)
 CHAN_HELP_SUSPEND
 	8,1Help on SUSPEND Minimum Access: 100
 	-
