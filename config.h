@@ -50,7 +50,7 @@
 /* Size of input buffer (note: this is different from BUFSIZ)
  * This must be big enough to hold at least one full IRC message, or messy
  * things will happen. */
-#define BUFSIZE		1024
+#define BUFSIZE		4096
 
 /* Extra warning:  If you change CHANMAX, your ChanServ database will be
  * unusable. 
@@ -68,7 +68,7 @@
 #define NICKMAX		32
 
 /* Maximum length of a password */
-#define PASSMAX		32
+#define PASSMAX		8
 
 /* Maximum length of a username */
 #define USERMAX		10
