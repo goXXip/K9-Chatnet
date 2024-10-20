@@ -46,10 +46,10 @@
 # For languages other than English, this string should have the following
 # format:
 #     language-name-in-language (language-name-in-English)
-# For example, "Español (Spanish)" or "Français (French)".
+# For example, "EspaÃ±ol (Spanish)" or "FranÃ§ais (French)".
 
 LANG_NAME
-	Türkçe (Turkish)
+	TÃ¼rkÃ§e (Turkish)
 
 #######pedro######
 COMMAND_LEVEL_0
@@ -507,7 +507,7 @@ NICK_SET_LANGUAGE_SYNTAX
 NICK_SET_LANGUAGE_UNKNOWN
 	Unknown language number %d.  Type /msg %s HELP SET LANGUAGE for a list of languages.
 NICK_SET_LANGUAGE_CHANGED
-	Dil Türkçe olarak değiştirildi.
+	Dil TÃ¼rkÃ§e olarak deÃ°iÃ¾tirildi.
 
 # SET URL responses
 NICK_SET_URL_CHANGED
@@ -3761,36 +3761,36 @@ NICK_SERVADMIN_HELP_FORBID
 
 CHAN_HELP
 
-	8,1YARDIM Menüsü Minimum Erişim Seviyesi: 0 
+	8,1YARDIM MenÃ¼sÃ¼ Minimum EriÃ¾im Seviyesi: 0 
 	-
 	KULLANIMI:
 	%S help <command>
 	-
 	YARDIM:
-	Bu komut, belirtmiş olduğunuz komut hakkında size detaylı bilgi sunar.
-	(Erişim seviyenizdeki komutların listesini görmek için %S commands yazınız)
-	Komutları kanala metin gönderir gibi gönderebilirsiniz.
-	ÖRNEK:
-	%S op <rumuz> (Bulunduğunuz kanaldaki kullanıcıya op (@) vermek için)
-	%S deop <rumuz> (Bulunduğunuz kanaldaki kullanıcının op'unu almak için)
+	Bu komut, belirtmiÃ¾ olduÃ°unuz komut hakkÃ½nda size detaylÃ½ bilgi sunar.
+	(EriÃ¾im seviyenizdeki komutlarÃ½n listesini gÃ¶rmek iÃ§in %S commands yazÃ½nÃ½z)
+	KomutlarÃ½ kanala metin gÃ¶nderir gibi gÃ¶nderebilirsiniz.
+	Ã–RNEK:
+	%S op <rumuz> (BulunduÃ°unuz kanaldaki kullanÃ½cÃ½ya op (@) vermek iÃ§in)
+	%S deop <rumuz> (BulunduÃ°unuz kanaldaki kullanÃ½cÃ½nÃ½n op'unu almak iÃ§in)
 	-
-	Buna ilaveten komutları /msg ile de gönderebilirsiniz (Bu sayede gönderdiğiniz
-	komutu sadece siz görebilirsiniz):
-	#blah kanalındaki bir kullanıcıya op vermek için: /msg %S op #blah <rumuz>
-	#blah kanalındaki bir kullanıcı banlamak için: /msg k9 ban #blah <rumuz>
+	Buna ilaveten komutlarÃ½ /msg ile de gÃ¶nderebilirsiniz (Bu sayede gÃ¶nderdiÃ°iniz
+	komutu sadece siz gÃ¶rebilirsiniz):
+	#blah kanalÃ½ndaki bir kullanÃ½cÃ½ya op vermek iÃ§in: /msg %S op #blah <rumuz>
+	#blah kanalÃ½ndaki bir kullanÃ½cÃ½ banlamak iÃ§in: /msg k9 ban #blah <rumuz>
 	-
-	/msg ile %S'a komut gönderirken kanal adını belirtmeyi unutmayınız.
+	/msg ile %S'a komut gÃ¶nderirken kanal adÃ½nÃ½ belirtmeyi unutmayÃ½nÃ½z.
 
 CHAN_HELP_VERSION
 	ChatNet K9 Channel Services
 	
 	ChatNet modifications (c) 2005-2006
-	
+	Basgelsin modifications (c) 2024
 	E-mail: routing@lists.chatnet.org
 	Authors:
 	
-	Smith (smith@smit-h.net)
-	Pedro (pedro@casumatrix.it)
+	goXXip (admin@basgelsin.net)
+	tonytr (admin@dvbsat.org)
 CHAN_HELP_SUSPEND
 	8,1Help on SUSPEND Minimum Access: 100
 	-
@@ -4678,49 +4678,49 @@ CHAN_HELP_LIST
 	will list whole channel
 
 CHAN_HELP_OP
-	8,1OP Minimum  Erişim Seviyesi: 100
+	8,1OP Minimum  EriÃ¾im Seviyesi: 100
 	-
 	KULLANIMI:
-	%S op #kanaladı <rumuz>
+	%S op #kanaladÃ½ <rumuz>
 	%S op <rumuz>
 	%S op
 	-
 	YARDIM:
-	Bu komut ile %S belirtmiş olduğunuz kullanıcıya kanal operatörü
+	Bu komut ile %S belirtmiÃ¾ olduÃ°unuz kullanÃ½cÃ½ya kanal operatÃ¶rÃ¼
 	yetkisi verecektir.
 	-
-	ÖRNEK:
+	Ã–RNEK:
 	%S op
 	%S op Thread Cathar
-	Bu komut ise size bulunduğunuz kanalda Op (@) verecektir!
+	Bu komut ise size bulunduÃ°unuz kanalda Op (@) verecektir!
 
 CHAN_HELP_DEOP
-	8,1DEOP Minimum Erişim Seviyesi: 100
+	8,1DEOP Minimum EriÃ¾im Seviyesi: 100
 	-
 	KULLANIMI:
-	%S deop #kanaladı <rumuz>
+	%S deop #kanaladÃ½ <rumuz>
 	%S deop <rumuz>
 	%S deop
 	-
 	YARDIM:
-	Bu komut ile %S belirtmiş olduğunuz kullanıcıdan kanal operatörü
-	yetkisini geri alır.
+	Bu komut ile %S belirtmiÃ¾ olduÃ°unuz kullanÃ½cÃ½dan kanal operatÃ¶rÃ¼
+	yetkisini geri alÃ½r.
 	-
-	ÖRNEK:
+	Ã–RNEK:
 	%S deop
 	%S deop Thread Cathar
-	 Bu komut ise sizin kanal operatörü yetkinizi alacaktır!
+	 Bu komut ise sizin kanal operatÃ¶rÃ¼ yetkinizi alacaktÃ½r!
 	
 CHAN_HELP_VOICE
-	8,1VOICE Minimum Erişim Seviyesi: 100
+	8,1VOICE Minimum EriÃ¾im Seviyesi: 100
 	-
 	KULLANIMI:
-	%S voice #kanaladı <rumuz>
+	%S voice #kanaladÃ½ <rumuz>
 	-
 	YARDIM:
-	Bu komut ile K9 belirtmiş olduğunuz kullanıcıya voice yetkisi verecektir.
-	Eğer kullanıcının voice yetkisi var ise yetkisini alacaktır.
-	Kanal MODE'u (+m) ise sadece Voice (+v) ve Op (@) yetkisine sahip kullanıcılar
+	Bu komut ile K9 belirtmiÃ¾ olduÃ°unuz kullanÃ½cÃ½ya voice yetkisi verecektir.
+	EÃ°er kullanÃ½cÃ½nÃ½n voice yetkisi var ise yetkisini alacaktÃ½r.
+	Kanal MODE'u (+m) ise sadece Voice (+v) ve Op (@) yetkisine sahip kullanÃ½cÃ½lar
 	sohbet edebilirler.
 
 CHAN_HELP_DEVOICE
@@ -4846,7 +4846,7 @@ CHAN_HELP_KICK
 	type: %S kick Thread
 	
 CHAN_HELP_BAN
-	8,1BAN Minimum Erişim Seviyesi: 75
+	8,1BAN Minimum EriÃ¾im Seviyesi: 75
 	-
 	KULLANIMI:
 	%S ban #channelname <nick> <time> <reason>
